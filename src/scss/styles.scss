@@ -1,10 +1,3 @@
-$sl-v-bg_color--primary: #172cee;
-
-.fm-test {
-    padding: 8px 16px;
-    background-color: $sl-v-bg_color--primary;
-    color: white;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-}
+@import 'variables';
+@import 'global';
+@import 'components/components';

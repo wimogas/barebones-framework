@@ -1,12 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
-        index: './src/js/app.js'
+        index: './src/js/app.js',
     },
-    devtool: 'inline-source-map',
     module: {
         rules: [
             {
@@ -31,13 +31,18 @@ module.exports = {
             },
         ],
     },
+    optimization: {
+        minimizer: [new TerserPlugin({
+          extractComments: false,
+        })],
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src", "index.html"),
         }),
     ],
     output: {
-        filename: '[contenthash].bundle.js',
+        filename: '[name].[contenthash].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
     },

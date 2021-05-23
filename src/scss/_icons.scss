@@ -1,0 +1,45 @@
+[data-icon="arrow"]:after {
+	display: block;
+	content: url("../../assets/icons/arrow.svg");
+	width: 10px;
+	margin-left: 0.5rem;
+	margin-bottom: 3px;
+}
+
+[data-icon="arrow-green"]:after {
+	display: block;
+	content: url("../../assets/icons/arrow-green.svg");
+	width: 10px;
+	margin-left: 0.5rem;
+	margin-bottom: 3px;
+}
+
+[data-icon="arrow-white"]:after {
+	display: block;
+	content: url("../../assets/icons/arrow-white.svg");
+	width: 10px;
+	margin-left: 0.5rem;
+	margin-bottom: 3px;
+}
+
+[data-icon="arrow-right-green"]:after {
+	display: block;
+	content: url("../../assets/icons/arrow-right-green.svg");
+	width: 15px;
+	margin-left: 0.5rem;
+	margin-bottom: -3px;
+}
+
+[data-icon="arrow-right"]:after {
+	display: block;
+	content: url("../../assets/icons/arrow-right.svg");
+	width: 15px;
+	margin-left: 0.5rem;
+	margin-bottom: -3px;
+}
+
+[data-icon="lang"]:after {
+	display: block;
+	content: url("../../assets/icons/lang.svg");
+	width: 18px;
+}

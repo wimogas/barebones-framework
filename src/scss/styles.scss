@@ -1,4 +1,10 @@
-@import 'variables';
-@import 'global';
-@import "bootstrap";
-@import 'components/components';
+@import "variables";
+
+@import "global";
+@import "icons";
+
+@import "layout";
+@import "elements";
+@import "components";
+
+@import "utils";

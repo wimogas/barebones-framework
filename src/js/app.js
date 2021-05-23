@@ -1,4 +1,3 @@
 window.$ = require('jquery');
-require('./utils.js');
-require('./main.js');
-require('../scss/styles.scss')
+require('./utils/utils.js');
+require('./utils/animations.js');

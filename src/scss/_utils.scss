@@ -1,0 +1,123 @@
+@use "sass:map";
+// TEXT COLORS
+
+[data-color="primary"] {
+	color: $sl-v-color-primary;
+}
+
+[data-color="secondary"] {
+	color: $sl-v-color-secondary;
+}
+
+[data-color="text"] {
+	color: $sl-v-color-text;
+}
+
+[data-color="white"] {
+	color: white;
+}
+
+[data-color="light"] {
+	color: $sl-v-color-text--light;
+}
+
+[data-color="dark"] {
+	color: $sl-v-color-heading;
+}
+
+// BACKGROUND COLORS
+
+[data-background="primary"] {
+	background-color: $sl-v-color-primary;
+}
+
+[data-background="secondary"] {
+	background-color: $sl-v-color-secondary;
+}
+
+[data-background="white"] {
+	background-color: white;
+}
+
+[data-background="light"] {
+	background-color: $gray300;
+}
+
+[data-background="dark"] {
+	background-color: $sl-v-color-heading;
+}
+
+// SHADOWS
+
+[data-shadow] {
+	box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+// HOVER
+
+[data-hover="light"]:hover {
+	background-color: $gray200;
+}
+
+[data-hover="dark"]:hover {
+	background-color: lighten($sl-v-color-heading, 10%);
+}
+
+[data-hover="primary"]:hover {
+	background-color: lighten($sl-v-color-primary, 10%);
+}
+
+// BORDER
+
+[data-border="normal-bottom"] {
+	border-bottom: 1px solid $gray200;
+}
+
+// MARGIN AND PADDING
+
+@each $prop, $name in (margin: m, padding: p) {
+	@each $key, $value in $spacers {
+		.#{$name}-#{$key} {
+			#{$prop}: $value;
+		}
+		.#{$name}t-#{$key},
+		.#{$name}y-#{$key} {
+			#{$prop}-top: $value;
+		}
+		.#{$name}r-#{$key},
+		.#{$name}x-#{$key} {
+			#{$prop}-right: $value;
+		}
+		.#{$name}b-#{$key},
+		.#{$name}y-#{$key} {
+			#{$prop}-bottom: $value;
+		}
+		.#{$name}l-#{$key},
+		.#{$name}x-#{$key} {
+			#{$prop}-left: $value;
+		}
+	}
+	@media screen and (max-width: map.get($breakpoints, "sm")) {
+		@each $key, $value in $spacers_sm {
+			.#{$name}-#{$key} {
+				#{$prop}: $value;
+			}
+			.#{$name}t-#{$key},
+			.#{$name}y-#{$key} {
+				#{$prop}-top: $value;
+			}
+			.#{$name}r-#{$key},
+			.#{$name}x-#{$key} {
+				#{$prop}-right: $value;
+			}
+			.#{$name}b-#{$key},
+			.#{$name}y-#{$key} {
+				#{$prop}-bottom: $value;
+			}
+			.#{$name}l-#{$key},
+			.#{$name}x-#{$key} {
+				#{$prop}-left: $value;
+			}
+		}
+	}
+}

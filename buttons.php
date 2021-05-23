@@ -5,6 +5,7 @@
     <?php include 'inc/nav.inc'; ?>
 
     <div class="sl-l-container">
+        <?php include 'templates/elements/buttons.inc'; ?>
     </div>
     
 </body>

@@ -1,0 +1,26 @@
+@mixin apply_background($color) {
+	background-color: $color;
+	transition: background-color 0.3s ease-in-out;
+	&:hover {
+		background-color: darken($color, 5%);
+		transition: background-color 0.3s ease-in-out;
+	}
+}
+
+.sl-e-button {
+	display: flex;
+	align-items: center;
+	font-size: 1rem;
+	padding: 0.8rem 1.5rem;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+	&[data-variant="primary"] {
+		@include apply_background($sl-v-color-primary);
+		color: white;
+	}
+	&[data-variant="secondary"] {
+		@include apply_background($sl-v-color-secondary);
+		color: white;
+	}
+}

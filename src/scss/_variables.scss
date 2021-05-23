@@ -1,7 +1,89 @@
 // BASE
 
-$sl-v-max-width: 1200px;
+$sl-v-max-width: 1046px;
 
 // COLORS
+$gray100: #f9fafc;
+$gray200: #f4f6f9;
+$gray300: #e9ecf2;
+$gray400: #e2e8ee;
+$gray500: #d5dde5;
+$gray600: #b1beca;
+$gray700: #899bad;
+$gray800: #505f6f;
+$gray900: #202d3a;
 
-$sl-v-color--primary: #3bc693;
+$green100: #edf9f5;
+$green200: #dbf4eb;
+$green300: #a5e5cd;
+$green400: #70d5b0;
+$green500: #3bc693;
+$green600: #37b78b;
+$green700: #31a381;
+$green800: #27806c;
+$green900: #1b5a55;
+
+$blue700: #075aff;
+
+$sl-v-color-primary: $green500;
+$sl-v-color-secondary: $blue700;
+
+$sl-v-color-heading: $gray900;
+$sl-v-color-text: $gray800;
+$sl-v-color-text--light: $gray700;
+
+// BREAKPOINTS
+
+$breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+);
+
+// SPACING
+
+$spacer: 1rem;
+
+$spacers: ();
+$spacers: map-merge(
+	(
+		0: 0,
+		1: (
+			$spacer * 0.25,
+		),
+		2: (
+			$spacer * 0.5,
+		),
+		3: $spacer,
+		4: (
+			$spacer * 1.5,
+		),
+		5: (
+			$spacer * 3,
+		),
+	),
+	$spacers
+);
+
+$spacers_sm: ();
+$spacers_sm: map-merge(
+	(
+		0: 0,
+		1: (
+			$spacer * 0.1,
+		),
+		2: (
+			$spacer * 0.25,
+		),
+		3: $spacer * 0.5,
+		4: (
+			$spacer,
+		),
+		5: (
+			$spacer * 1.5,
+		),
+	),
+	$spacers_sm
+);

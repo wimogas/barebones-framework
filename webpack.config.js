@@ -6,9 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     mode: 'production',
     entry: {
-        index: './src/js/app.js',
-        components: './src/js/components.js',
-        styles: './src/js/styles.js',
+        index: './src/js/app.js'
     },
     watch: true,
     module: {
@@ -45,26 +43,18 @@ module.exports = {
             },
         ],
     },
-    optimization: {
-        minimizer: [new TerserPlugin({
-          extractComments: false,
-        })],
-    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src", "index.html"),
         }),
         new MiniCssExtractPlugin({
-            filename: '[contenthash].css',
-            chunkFilename: '[contenthash].css',
+            filename: '[contenthash].min.css',
+            chunkFilename: '[contenthash].min.css',
           }),
     ],
     output: {
-        filename: '[contenthash].[name].bundle.js',
+        filename: '[contenthash].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
-    },
-    optimization: {
-        runtimeChunk: 'single',
     },
 };

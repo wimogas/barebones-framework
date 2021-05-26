@@ -1,34 +1,38 @@
 import { default as anime } from '../../../node_modules/animejs/lib/anime.es.js';
 
-// const testButton = document.querySelectorAll('.sl-e-button')
+const baseDuration = 200
 
-// testButton.forEach(button => {
-//     if (!button.dataset.dropdown_name) {
-//         button.addEventListener("mouseover", () => {
-//             anime({
-//                 targets: button,
-//                 scale: {
-//                     value: [1, 1.05],
-//                     duration: 500,
-//                 },
-//                 boxShadow: {
-//                     value: ['0px 5px 3px 3px rgba(0, 0, 0, 0.1)', '0px 5px 10px 3px rgba(0, 0, 0, 0.1)'],
-//                     duration: 500,
-//                 }
-//             });
-//         })
-//         button.addEventListener("mouseout", () => {
-//             anime({
-//                 targets: button,
-//                 scale: {
-//                     value: [1.05, 1],
-//                     duration: 500,
-//                 },
-//                 boxShadow: {
-//                     value: ['0px 5px 10px 3px rgba(0, 0, 0, 0.1)', '0px 5px 10px 3px rgba(0, 0, 0, 0)'],
-//                     duration: 500,
-//                 }
-//             });
-//         });
-//     };
-// });
+export const animateDropdownMenu = (menu) => {
+    anime({
+        targets: menu,
+        opacity: {
+            value: [0, 1],
+            duration: baseDuration,
+            easing: 'linear'
+        },
+        translateY: {
+            value: [-10, 10],
+            duration: baseDuration,
+            easing: 'linear'
+        }
+    })
+}
+
+export const animateDropdownMenuOut = (menu) => {
+    anime({
+        targets: menu,
+        opacity: {
+            value: [1, 0],
+            duration: baseDuration,
+            easing: 'linear'
+        },
+        translateY: {
+            value: [10, -10],
+            duration: baseDuration,
+            easing: 'linear'
+        },
+    });
+    setTimeout(() => {
+        menu.style.display = 'none';
+    }, baseDuration*2);
+}

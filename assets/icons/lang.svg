@@ -1,5 +1,9 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#46637F" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M3 12H21" stroke="#46637F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12 20.7583C14.0711 20.7583 15.75 16.837 15.75 11.9999C15.75 7.16279 14.0711 3.24152 12 3.24152C9.92893 3.24152 8.25 7.16279 8.25 11.9999C8.25 16.837 9.92893 20.7583 12 20.7583Z" stroke="#46637F" stroke-width="2" stroke-miterlimit="10"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<path d="M12,22C6.5,22,2,17.5,2,12C2,6.5,6.5,2,12,2c5.5,0,10,4.5,10,10C22,17.5,17.5,22,12,22z M9.3,13c0.2,4.2,1.7,6.8,2.7,6.8
+	s2.5-2.6,2.7-6.8H9.3z M16.7,13c-0.1,2.6-0.7,4.8-1.5,6.3c2.5-1.1,4.4-3.5,4.7-6.3H16.7z M4.1,13c0.4,2.8,2.2,5.2,4.7,6.3
+	c-0.9-1.6-1.4-3.8-1.5-6.3H4.1z M16.7,11h3.2c-0.4-2.8-2.2-5.2-4.7-6.3C16.1,6.2,16.6,8.4,16.7,11z M9.3,11h5.5
+	C14.5,6.8,13,4.2,12,4.2S9.5,6.8,9.3,11z M4.1,11h3.2c0.1-2.6,0.7-4.8,1.5-6.3C6.3,5.8,4.4,8.2,4.1,11z"/>
 </svg>

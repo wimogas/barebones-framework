@@ -1,28 +1,23 @@
-[data-icon]:after {
+.icon {
 	display: inline-block;
-	width: 1rem; 
-	margin-left: .3rem;
-}
-[data-icon="arrow"]:after {
-	content: url("../../assets/icons/arrow.svg");
+	width: 2rem;
+	filter: invert(38%) sepia(3%) saturate(3240%) hue-rotate(171deg)
+		brightness(87%) contrast(82%);
+
 }
 
-[data-icon="arrow-green"]:after {
-	content: url("../../assets/icons/arrow-green.svg");
+.icon svg {
+	pointer-events: none;
 }
 
-[data-icon="arrow-white"]:after {
-	content: url("../../assets/icons/arrow-white.svg");
+.small {
+	width: 0.5rem;
 }
 
-[data-icon="arrow-right-green"]:after {
-	content: url("../../assets/icons/arrow-right-green.svg");
+.medium {
+	width: 1rem;
 }
 
-[data-icon="arrow-right"]:after {
-	content: url("../../assets/icons/arrow-right.svg");
-}
-
-[data-icon="lang"]:after {
+.lang:after {
 	content: url("../../assets/icons/lang.svg");
 }

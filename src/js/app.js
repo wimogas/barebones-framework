@@ -6,4 +6,5 @@ require('./utils/animations.js');
 require('../scss/styles.scss');
 
 // COMPONENTS
-require('./components/dropdown.js')
+require('./components/dropdown.js');
+require('./components/virtualpath.js')

@@ -1,4 +1,4 @@
-<nav class="sl-l-block p-3" data-justify="between" data-background="dark">
+<nav class="sl-c-nav sl-l-block p-3" data-justify="between" data-width="100" data-background="dark" style="position:fixed">
 	<ul class="sl-l-block">
 		<li class="pr-5">
 			<a href="./index.php">
@@ -44,6 +44,11 @@
 					<li data-hover="light">
 						<a class="p-3 w-100" data-color="text" href="dropdowns.php"
 							>Dropdowns</a
+						>
+					</li>
+					<li data-hover="light">
+						<a class="p-3 w-100" data-color="text" href="dam.php"
+							>DAM</a
 						>
 					</li>
 				</ul>

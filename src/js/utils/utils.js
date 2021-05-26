@@ -12,3 +12,6 @@ const getWindowSize = () => {
 
 window.onresize = getWindowSize;
 
+export const truncate = (str, n) => {
+    return (str.length > n) ? str.substr(0, n-1) + "\u2026" : str;
+};

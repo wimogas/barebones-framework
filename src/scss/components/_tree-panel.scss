@@ -1,0 +1,36 @@
+.sl-c-tree-panel {
+	width: 300px;
+	height: 2000px;
+	position: fixed;
+	margin-top: 60px;
+	overflow-y: scroll;
+}
+
+.sl-c-tree-panel::-webkit-scrollbar {
+	display: none;
+}
+
+.sl-c-tree-panel {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.sl-c-folder-block--active {
+	background-color: $gray200;
+	&:hover {
+		background-color: $gray200;
+	}
+}
+
+.sl-c-folder-name--arrow {
+	min-width: 16px;
+	transform: rotate(-90deg);
+}
+
+.sl-c-folder-menu {
+	display: none;
+}
+
+.sl-c-folder-block:hover > .sl-c-folder-menu {
+	display: block;
+}

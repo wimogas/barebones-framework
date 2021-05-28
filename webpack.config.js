@@ -48,12 +48,12 @@ module.exports = {
             template: path.resolve(__dirname, "src", "index.html"),
         }),
         new MiniCssExtractPlugin({
-            filename: '[contenthash].min.css',
-            chunkFilename: '[contenthash].min.css',
+            filename: '[name].min.css',
+            chunkFilename: '[name].min.css',
           }),
     ],
     output: {
-        filename: '[contenthash].bundle.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
     },

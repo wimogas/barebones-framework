@@ -1,92 +1,91 @@
 @use "sass:map";
 // TEXT COLORS
 
-[data-color="primary"] {
+.color-primary {
 	color: $sl-v-color-primary;
 }
 
-[data-color="secondary"] {
+.color-secondary {
 	color: $sl-v-color-secondary;
 }
 
-[data-color="text"] {
+.color-text {
 	color: $sl-v-color-text;
 }
 
-[data-color="white"] {
+.color-white {
 	color: white;
 }
 
-[data-color="light"] {
+.color-light {
 	color: $sl-v-color-text--light;
 }
 
-[data-color="dark"] {
+.color-dark {
 	color: $sl-v-color-heading;
 }
 
 // BACKGROUND COLORS
 
-[data-background="primary"] {
+.bg-primary {
 	background-color: $sl-v-color-primary;
 }
 
-[data-background="secondary"] {
+.bg-secondary {
 	background-color: $sl-v-color-secondary;
 }
 
-[data-background="white"] {
+.bg-white {
 	background-color: white;
 }
 
-[data-background="light"] {
+.bg-light {
 	background-color: $gray300;
 }
 
-[data-background="dark"] {
+.bg-dark {
 	background-color: $sl-v-color-heading;
 }
 
-// FILTER COLORS
+// FILTER COLORS (CHANGE SVG FILL COLORS)
 
-[data-filter="primary"] {
+.filter-primary {
 	filter: invert(77%) sepia(32%) saturate(855%) hue-rotate(100deg)
 		brightness(85%) contrast(83%);
 }
 
-[data-filter="white"] {
+.filter-white {
 	filter: invert(100%) sepia(99%) saturate(560%) hue-rotate(177deg)
 		brightness(111%) contrast(100%);
 }
 
-
 // SHADOWS
 
-[data-shadow] {
+.shadow {
 	box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
 }
 
 // HOVER
 
-[data-hover="light"]:hover {
+.hover-light:hover {
 	background-color: $gray200;
 }
 
-[data-hover="dark"]:hover {
+.hover-dark:hover {
 	background-color: lighten($sl-v-color-heading, 10%);
 }
 
-[data-hover="primary"]:hover {
+.hover-primary:hover {
 	background-color: lighten($sl-v-color-primary, 10%);
 }
 
 // BORDER
 
-[data-border="normal-bottom"] {
+.border-bottom {
 	border-bottom: 1px solid $gray200;
 }
 
-[data-border="normal-right"] {
+.border-right {
 	border-right: 1px solid $gray200;
 }
 

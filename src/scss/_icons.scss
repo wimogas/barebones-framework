@@ -3,7 +3,6 @@
 	width: 2rem;
 	filter: invert(38%) sepia(3%) saturate(3240%) hue-rotate(171deg)
 		brightness(87%) contrast(82%);
-
 }
 
 .icon svg {
@@ -16,8 +15,4 @@
 
 .medium {
 	width: 1rem;
-}
-
-.lang:after {
-	content: url("../../assets/icons/lang.svg");
 }

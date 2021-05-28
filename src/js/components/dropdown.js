@@ -11,21 +11,16 @@ document.addEventListener("click", () => {
     })
 });
 
-dropdownMenu.forEach(menu => {
-    menu.addEventListener("click", function(e) {
-        e.stopPropagation(); 
-    });
-});
-
 dropdownToggler.forEach(dropdown => {
     dropdown.addEventListener("click", function(e) {
         e.stopPropagation(); 
         let target = e.target;
         let targetWidth = target.offsetWidth;
         let toggler;
-        if( e.target.dataset.dropdown_name) {
-            target = e.target;
+        if( target.dataset.dropdown_name) {
             toggler = target.dataset.dropdown_name;
+        } else if (target.parentElement.parentElement.dataset.dropdown_name) {
+            toggler = target.parentElement.parentElement.dataset.dropdown_name;
         }
         dropdownMenu.forEach(menu => {
             if (menu.dataset.dropdown_parent === toggler) {

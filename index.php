@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<?php include 'inc/head.inc'; ?>
-<body>
-    <?php include 'inc/nav.inc'; ?>
-
-    <div class="sl-l-container">
-    </div>
-    
-</body>
-</html>
+<?php
+require 'smarty/libs/Smarty.class.php';
+$smarty = new Smarty;
+$smarty->assign('name', 'Guillem');
+$smarty->display('templates/index.tpl');

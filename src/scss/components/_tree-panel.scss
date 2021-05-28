@@ -23,12 +23,14 @@
 }
 
 .sl-c-folder-name--arrow {
-	min-width: 16px;
+	min-width: 1rem;
 	transform: rotate(-90deg);
 }
 
 .sl-c-folder-menu {
 	display: none;
+	min-width: 1rem;
+	padding-right: 1rem;
 }
 
 .sl-c-folder-block:hover > .sl-c-folder-menu {

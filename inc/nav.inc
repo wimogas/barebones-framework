@@ -1,29 +1,28 @@
-<nav class="sl-c-nav sl-l-block p-3" data-justify="between" data-width="100" data-background="dark" style="position:fixed">
+<nav class="sl-c-nav sl-l-block p-3 justify-between w-100 bg-dark">
 	<ul class="sl-l-block">
 		<li class="pr-5">
 			<a href="./index.php">
-				<h3 data-color="white">SL DESIGN SYSTEM</h3>
+				<h3 class="color-white">SL DESIGN SYSTEM</h3>
 			</a>
 		</li>
 		<li class="pr-5">
 			<a
-				class="sl-js-dropdown"
+				class="sl-js-dropdown color-light"
 				data-dropdown_name="elements"
-				data-color="light"
-				data-icon="arrow"
 				href="#"
 			>
 				Elements
+				<i class="icon medium ml-2">
+					<img src="./assets/icons/arrow.svg" />
+				</i>
 			</a>
 			<div class="sl-c-dropdown-menu" data-dropdown_parent="elements">
 				<ul>
-					<li data-hover="light">
-						<a class="p-3 w-100" data-color="text" href="links.php">Links</a>
+					<li class="hover-light">
+						<a class="p-3 w-100 color-text" href="links.php">Links</a>
 					</li>
-					<li data-hover="light">
-						<a class="p-3 w-100" data-color="text" href="buttons.php"
-							>Buttons</a
-						>
+					<li class="hover-light">
+						<a class="p-3 w-100 color-text" href="buttons.php">Buttons</a>
 					</li>
 				</ul>
 			</div>
@@ -31,25 +30,22 @@
 
 		<li class="pr-5">
 			<a
-				class="sl-js-dropdown"
+				class="sl-js-dropdown color-light"
 				data-dropdown_name="components"
-				data-color="light"
-				data-icon="arrow"
 				href="#"
 			>
 				Components
+				<i class="icon medium ml-2">
+					<img src="./assets/icons/arrow.svg" />
+				</i>
 			</a>
 			<div class="sl-c-dropdown-menu" data-dropdown_parent="components">
 				<ul>
-					<li data-hover="light">
-						<a class="p-3 w-100" data-color="text" href="dropdowns.php"
-							>Dropdowns</a
-						>
+					<li class="hover-light">
+						<a class="p-3 w-100 color-text" href="dropdowns.php">Dropdowns</a>
 					</li>
-					<li data-hover="light">
-						<a class="p-3 w-100" data-color="text" href="dam.php"
-							>DAM</a
-						>
+					<li class="hover-light">
+						<a class="p-3 w-100 color-text" href="dam.php">DAM</a>
 					</li>
 				</ul>
 			</div>

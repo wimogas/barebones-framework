@@ -16,7 +16,7 @@
 					<img src="./assets/icons/arrow.svg" />
 				</i>
 			</a>
-			<div class="sl-c-dropdown-menu" data-dropdown_parent="elements">
+			<div class="sl-c-dropdown-menu center" data-dropdown_parent="elements">
 				<ul>
 					<li class="hover-light">
 						<a class="p-3 w-100 color-text" href="links.php">Links</a>

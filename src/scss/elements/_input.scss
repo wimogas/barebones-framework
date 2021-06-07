@@ -1,0 +1,17 @@
+.sl-e-input {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #D5DDE5;
+    &.first {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sl-e-input {
+        &.first {
+            margin-right: unset;
+        }
+    }
+}

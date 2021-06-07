@@ -1,7 +1,22 @@
-import { animateDropdownMenu, animateDropdownMenuOut } from '../utils/animations'
-
 const dropdownToggler = document.querySelectorAll('.sl-js-dropdown');
 const dropdownMenu = document.querySelectorAll('.sl-c-dropdown-menu');
+
+const animateDropdownMenuOut = (menu) => {
+    $(menu).animate({
+        opacity: 0,
+        transform: "translateY(-10px)"
+    }, 200)
+    setTimeout(() => {
+        menu.style.display = 'none'
+    }, 300)
+}
+
+const animateDropdownMenuIn = (menu) => {
+    $(menu).animate({
+        opacity: 1,
+        transform: "translateY(10px)"
+    }, 200)
+}
 
 document.addEventListener("click", () => {
     dropdownMenu.forEach(menu => {
@@ -28,11 +43,11 @@ dropdownToggler.forEach(dropdown => {
                     animateDropdownMenuOut(menu)
                 } else {
                     menu.style.display = 'flex';
-                    if (dropdown.dataset.dropdown_align === "center") {
+                    if (menu.classList.contains("center")) {
                         const menuWidth = menu.offsetWidth;
                         menu.style.transform = `translateX(-${(menuWidth - targetWidth) / 2}px)`;
                     }
-                    animateDropdownMenu(menu)
+                    animateDropdownMenuIn(menu)
                 }
             } else {
                 animateDropdownMenuOut(menu)

@@ -1,16 +1,15 @@
-@use "sass:map";
 // TEXT COLORS
 
 .color-primary {
-	color: $sl-v-color-primary;
+	color: $color-primary;
 }
 
 .color-secondary {
-	color: $sl-v-color-secondary;
+	color: $color-secondary;
 }
 
 .color-text {
-	color: $sl-v-color-text;
+	color: $color-text;
 }
 
 .color-white {
@@ -18,21 +17,21 @@
 }
 
 .color-light {
-	color: $sl-v-color-text--light;
+	color: $color-text--light;
 }
 
 .color-dark {
-	color: $sl-v-color-heading;
+	color: $color-heading;
 }
 
 // BACKGROUND COLORS
 
 .bg-primary {
-	background-color: $sl-v-color-primary;
+	background-color: $color-primary;
 }
 
 .bg-secondary {
-	background-color: $sl-v-color-secondary;
+	background-color: $color-secondary;
 }
 
 .bg-white {
@@ -44,7 +43,11 @@
 }
 
 .bg-dark {
-	background-color: $sl-v-color-heading;
+	background-color: $color-heading;
+}
+
+.bg-primary--dark {
+	background-color: $green900;
 }
 
 // FILTER COLORS (CHANGE SVG FILL COLORS)
@@ -72,11 +75,11 @@
 }
 
 .hover-dark:hover {
-	background-color: lighten($sl-v-color-heading, 10%);
+	background-color: lighten($color-heading, 10%);
 }
 
 .hover-primary:hover {
-	background-color: lighten($sl-v-color-primary, 10%);
+	background-color: lighten($color-primary, 10%);
 }
 
 // BORDER
@@ -89,51 +92,8 @@
 	border-right: 1px solid $gray200;
 }
 
-// MARGIN AND PADDING
+// TEXT ALIGN 
 
-@each $prop, $name in (margin: m, padding: p) {
-	@each $key, $value in $spacers {
-		.#{$name}-#{$key} {
-			#{$prop}: $value;
-		}
-		.#{$name}t-#{$key},
-		.#{$name}y-#{$key} {
-			#{$prop}-top: $value;
-		}
-		.#{$name}r-#{$key},
-		.#{$name}x-#{$key} {
-			#{$prop}-right: $value;
-		}
-		.#{$name}b-#{$key},
-		.#{$name}y-#{$key} {
-			#{$prop}-bottom: $value;
-		}
-		.#{$name}l-#{$key},
-		.#{$name}x-#{$key} {
-			#{$prop}-left: $value;
-		}
-	}
-	@media screen and (max-width: map.get($breakpoints, "sm")) {
-		@each $key, $value in $spacers_sm {
-			.#{$name}-#{$key} {
-				#{$prop}: $value;
-			}
-			.#{$name}t-#{$key},
-			.#{$name}y-#{$key} {
-				#{$prop}-top: $value;
-			}
-			.#{$name}r-#{$key},
-			.#{$name}x-#{$key} {
-				#{$prop}-right: $value;
-			}
-			.#{$name}b-#{$key},
-			.#{$name}y-#{$key} {
-				#{$prop}-bottom: $value;
-			}
-			.#{$name}l-#{$key},
-			.#{$name}x-#{$key} {
-				#{$prop}-left: $value;
-			}
-		}
-	}
+.text-center {
+	text-align: center;
 }

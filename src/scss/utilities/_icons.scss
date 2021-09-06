@@ -1,18 +1,10 @@
 .icon {
 	display: inline-block;
-	width: 2rem;
+	width: 16px;
 	filter: invert(38%) sepia(3%) saturate(3240%) hue-rotate(171deg)
 		brightness(87%) contrast(82%);
 }
 
 .icon svg {
 	pointer-events: none;
-}
-
-.small {
-	width: 0.5rem;
-}
-
-.medium {
-	width: 1rem;
 }

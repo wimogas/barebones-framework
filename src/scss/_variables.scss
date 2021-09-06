@@ -2,6 +2,8 @@
 $max-width: 1440px;
 
 // COLORS
+$white: #ffffff;
+
 $gray100: #f9fafc;
 $gray200: #f4f6f9;
 $gray300: #e9ecf2;
@@ -12,21 +14,35 @@ $gray700: #899bad;
 $gray800: #505f6f;
 $gray900: #202d3a;
 
-$green100: #edf9f5;
-$green200: #dbf4eb;
-$green300: #a5e5cd;
-$green400: #70d5b0;
-$green500: #3bc693;
-$green600: #37b78b;
-$green700: #31a381;
-$green800: #27806c;
-$green900: #1b5a55;
+$color-primary: #2984FF;
+$color-primary--dark: #1053aa;
+$color-secondary: #FF6270;
 
-$blue700: #075aff;
+$color-success: #70CF98;
+$color-danger: #e9404e;
 
-$color-primary: $green500;
-$color-secondary: $blue700;
+$color-heading: #131736;
+$color-text: #A5B4C9;
+$color-text--light: #b9c6da;
+$color-text--placeholder: #8c9eb9;
 
-$color-heading: $gray900;
-$color-text: $gray800;
-$color-text--light: $gray700;
+$color-border: $gray500;
+$color-border--active: $gray700;
+
+// MAPS
+
+$color-theme: (
+	"primary": $color-primary,
+	"primary-dark": $color-primary--dark,
+	"secondary": $color-secondary,
+	"text": $color-text,
+	"white": $white,
+	"light": $color-text--light,
+	"dark": $color-heading,
+	"success": $color-success,
+	"danger": $color-danger,
+);
+
+// SPACING
+
+$border-radius: 6px;

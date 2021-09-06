@@ -1,15 +1,39 @@
-.sl-e-input {
-    padding: 1rem;
+.input {
+    padding: 3rem;
     border-radius: 4px;
-    margin-bottom: 20px;
-    border: 1px solid #D5DDE5;
+    margin-bottom: 5rem;
+    color: $color-text--placeholder;
+    border: 1px solid $color-border;
     &.first {
-        margin-right: 20px;
+        margin-right: 5rem;
+    }
+    &:focus-visible {
+        outline: none;
+        border: 1px solid $color-border--active;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .sl-e-input {
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../assets/images/icons/angle-down.svg') right no-repeat #fff;
+    background-size: 16px;
+}
+
+// For IE only
+select::-ms-expand {
+    display: none;
+}
+@media screen and (min-width:0\0) {
+    select {
+        background: none\9;
+        padding: 5px\9;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .input {
         &.first {
             margin-right: unset;
         }

@@ -1,0 +1,21 @@
+@each $prop, $abbrev in (margin: m, padding: p) {
+    @for $size from 1 through 100 {
+        .#{$abbrev}-#{$size} { #{$prop}: #{$size}rem!important; }
+        .#{$abbrev}t-#{$size},
+        .#{$abbrev}y-#{$size} {
+        #{$prop}-top: #{$size}rem!important;
+        }
+        .#{$abbrev}r-#{$size},
+        .#{$abbrev}x-#{$size} {
+        #{$prop}-right: #{$size}rem!important;
+        }
+        .#{$abbrev}b-#{$size},
+        .#{$abbrev}y-#{$size} {
+        #{$prop}-bottom: #{$size}rem!important;
+        }
+        .#{$abbrev}l-#{$size},
+        .#{$abbrev}x-#{$size} {
+        #{$prop}-left: #{$size}rem!important;
+        }
+    }
+}

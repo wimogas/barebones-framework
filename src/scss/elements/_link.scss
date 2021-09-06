@@ -1,0 +1,8 @@
+.link {
+    text-decoration: none;
+    @each $key, $val in ($color-theme) {
+		&.#{$key} {
+			color: $val;
+		}
+	}
+}

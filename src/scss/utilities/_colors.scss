@@ -1,0 +1,35 @@
+// TEXT COLORS
+@each $key, $val in ($color-theme) {
+	.color-#{$key} {
+		color: $val;
+	}
+}
+
+// BACKGROUND COLORS
+@each $key, $val in ($color-theme) {
+	.bg-#{$key} {
+		background-color: $val;
+	}
+}
+
+// FILTER COLORS (CHANGE SVG FILL COLORS)
+
+.filter-primary {
+	filter: invert(11%) sepia(97%) saturate(7499%) hue-rotate(225deg) brightness(105%) contrast(109%);
+}
+
+.filter-white {
+	filter: invert(100%) sepia(99%) saturate(560%) hue-rotate(177deg)
+		brightness(111%) contrast(100%);
+}
+
+.filter-light {
+	filter: invert(68%) sepia(12%) saturate(628%) hue-rotate(177deg)
+		brightness(89%) contrast(93%);
+}
+
+// SHADOWS
+
+.shadow {
+	box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
+}

@@ -1,54 +1,61 @@
-<nav class="sl-c-nav sl-l-block p-3 justify-between w-100 bg-dark">
-	<ul class="sl-l-block">
-		<li class="pr-5">
-			<a href="./index.php">
-				<h3 class="color-white">SL DESIGN SYSTEM</h3>
+<nav class="nav block direction-row justify-between w-100 bg-white border-bottom">
+	<div class="block direction-row align-center p-3">
+		<div class="pr-7">
+			<a class="link" href="./index.php">
+				<h3 class="color-primary">Barebones v1.0</h3>
 			</a>
-		</li>
-		<li class="pr-5">
+		</div>
+		<div class="pr-5">
 			<a
-				class="sl-js-dropdown color-light"
-				data-dropdown_name="elements"
+				class="link dropdown-trigger"
+				data-dropdown_trigger="elements"
 				href="#"
 			>
-				Elements
-				<i class="icon medium ml-2">
+				<span class="color-light">Elements</span>
+				<i class="icon medium filter-light">
 					<img src="./assets/icons/arrow.svg" />
 				</i>
 			</a>
-			<div class="sl-c-dropdown-menu center" data-dropdown_parent="elements">
-				<ul>
-					<li class="hover-light">
-						<a class="p-3 w-100 color-text" href="links.php">Links</a>
-					</li>
-					<li class="hover-light">
-						<a class="p-3 w-100 color-text" href="buttons.php">Buttons</a>
-					</li>
-				</ul>
+			<div class="dropdown center" data-dropdown_name="elements">
+				<div class="block w-100 direction-column">
+					<div class="block w-100 hover-light">
+						<a class="link p-3" href="blocks.php"><span class="color-text">Blocks</span></a>
+					</div>
+					<div class="block hover-light">
+						<a class="link p-3 w-100" href="buttons.php"><span class="color-text">Buttons</span></a>
+					</div>
+					<div class="block hover-light">
+						<a class="link p-3 w-100" href="links.php"><span class="color-text">Links</span></a>
+					</div>
+				</div>
 			</div>
-		</li>
+		</div>
 
-		<li class="pr-5">
-			<a
-				class="sl-js-dropdown color-light"
-				data-dropdown_name="components"
-				href="#"
-			>
-				Components
-				<i class="icon medium ml-2">
+		<div class="pr-5">
+			<a class="link dropdown-trigger" data-dropdown_trigger="components" href="#">
+				<span class="color-light">Components</span>
+				<i class="icon medium filter-light">
 					<img src="./assets/icons/arrow.svg" />
 				</i>
 			</a>
-			<div class="sl-c-dropdown-menu" data-dropdown_parent="components">
-				<ul>
-					<li class="hover-light">
-						<a class="p-3 w-100 color-text" href="dropdowns.php">Dropdowns</a>
-					</li>
-					<li class="hover-light">
-						<a class="p-3 w-100 color-text" href="dam.php">DAM</a>
-					</li>
-				</ul>
+			<div class="dropdown" data-dropdown_name="components">
+				<div class="block w-100 direction-column">
+					<div class="block w-100 hover-light">
+						<a class="link p-3" href="dropdowns.php"><span class="color-text">Dropdowns</span></a>
+					</div>
+					<div class="block w-100 hover-light">
+						<a class="link p-3" href="toasts.php"><span class="color-text">Toasts</span></a>
+					</div>
+					<div class="block w-100 hover-light">
+						<a class="link p-3" href="alerts.php"><span class="color-text">Alerts</span></a>
+					</div>
+					<div class="block w-100 hover-light">
+						<a class="link p-3" href="modals.php"><span class="color-text">Modals</span></a>
+					</div>
+					<div class="block w-100 hover-light">
+						<a class="link p-3" href="tags.php"><span class="color-text">Tag</span></a>
+					</div>
+				</div>
 			</div>
-		</li>
-	</ul>
+		</div>
 </nav>

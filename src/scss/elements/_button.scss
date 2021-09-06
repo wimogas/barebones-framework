@@ -7,19 +7,36 @@
 	}
 }
 
-.sl-e-button {
+.button {
 	display: flex;
-	font-size: 1rem;
-	padding: 0.8rem 1.5rem;
+	font-size: 16px;
+	padding: 3rem 6rem;
 	border-radius: 6px;
 	border: none;
 	cursor: pointer;
-	&.primary {
-		@include apply_background($color-primary);
-		color: white;
+	@each $key, $val in ($color-theme) {
+		&.#{$key} {
+			@include apply_background($val);
+			@if ($key == "white") {
+				color: $color-primary;
+			} @else {
+				color: white;
+			}
+		}
 	}
-	&.secondary {
-		@include apply_background($color-secondary);
-		color: white;
+	&.small {
+		font-size: 14px;
+		padding: 1.5rem 3rem;
+		border-radius: 3px;
+	}
+	&.large {
+		font-size: 24px;
+		padding: 3rem 7rem;
+		border-radius: 8px;
+	}
+	&.full {
+		justify-content: center;
+		width: 100%;
 	}
 }
+

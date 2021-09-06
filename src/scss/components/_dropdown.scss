@@ -1,9 +1,42 @@
-.sl-c-dropdown-menu {
+.dropdown-trigger {
+	position: relative;
+}
+
+.dropdown {
 	display: none;
-	position: fixed;
+	position: absolute;
 	background-color: white;
 	box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
 	min-width: 150px;
 	z-index: 999;
 	opacity: 0;
+	transform: translateY(-10px);
+	&.animate-menu-in {
+		animation: animateMenuIn 0.3s ease forwards;
+	}
+	&.animate-menu-out {
+		animation: animateMenuOut 0.3s ease forwards;
+	}
+}
+
+@keyframes animateMenuIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(10px);
+	}
+}
+
+@keyframes animateMenuOut {
+	from {
+		opacity: 1;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
 }

@@ -1,0 +1,13 @@
+// HOVER
+
+.hover-light:hover {
+	background-color: $gray200;
+}
+
+.hover-dark:hover {
+	background-color: lighten($color-heading, 10%);
+}
+
+.hover-primary:hover {
+	background-color: lighten($color-primary, 10%);
+}

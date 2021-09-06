@@ -1,0 +1,46 @@
+.alert {
+    position: fixed;
+    top: -60px;
+    left: 0;
+    padding: 3rem;
+    display: flex;
+    opacity: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 9999;
+    @each $key, $val in ($color-theme) {
+		&.#{$key} {
+			background-color: $val;
+			@if ($key == "white") {
+				color: $color-primary;
+			} @else {
+				color: white;
+			}
+		}
+	}
+    &.is-example {
+        position: unset;
+        margin: unset;
+        margin-right: auto;
+        display: flex;
+        opacity: 1;
+        z-index: unset;
+    }
+    &.alert-fade-in {
+        opacity: 1!important;
+        transition: all 300ms ;
+        top: 0;
+    }
+    &.alert-fade-out {
+        opacity: 0!important;
+        transition: all 300ms;
+        top: -60px;
+    }
+}
+
+.alert-close-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}

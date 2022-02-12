@@ -8,9 +8,10 @@
 <?php
     require_once 'inc/nav.inc'
 ?>
+
 <div class="wrapper">
-    <div class="container block direction-row justify-center pt-50">
-        <div class="block direction-column card w-50 align-center bg-white">
+    <div class="container block direction-row justify-center pt-50 px-5">
+        <div class="block direction-column card align-center bg-white">
             <h1 class="color-primary mb-10 block direction-row align-center"><i class="ri-blaze-fill mr-2"></i>Barebones</h1>
             <p class="color-text mb-5">This is a simple but effective css framework</p>
             <div class="block w-100">

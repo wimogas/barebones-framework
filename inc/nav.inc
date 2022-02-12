@@ -1,10 +1,10 @@
-<nav class="nav block direction-row justify-between w-100 bg-white border-bottom">
+<nav class="nav block direction-row justify-between w-100 bg-primary">
 	<div class="w-100">
 		<div class="block direction-row justify-between">
 			<div class="block direction-row align-center px-5 py-3">
 				<div class="pr-7">
 					<a class="link" href="./index.php">
-						<h3 class="color-primary block direction-row align-center"><i class="ri-blaze-fill mr-1"></i>Barebones</h3>
+						<h3 class="color-white block direction-row align-center"><i class="ri-blaze-fill mr-1"></i>Barebones</h3>
 					</a>
 				</div>
 				<div class="pr-5">
@@ -13,8 +13,8 @@
 						data-dropdown_trigger="elements"
 						href="#"
 					>
-						<span class="color-text">Elements</span>
-						<i class="icon light ri-arrow-down-s-line"></i>
+						<span class="color-white">Elements</span>
+						<i class="icon white ri-arrow-down-s-line"></i>
 					</a>
 					<div class="dropdown center" data-dropdown_name="elements">
 						<div class="block w-100 direction-column">
@@ -33,8 +33,8 @@
 
 				<div class="pr-5">
 					<a class="link dropdown-trigger" data-dropdown_trigger="components" href="#">
-						<span class="color-text">Components</span>
-						<i class="icon light ri-arrow-down-s-line"></i>
+						<span class="color-white">Components</span>
+						<i class="icon white ri-arrow-down-s-line"></i>
 					</a>
 					<div class="dropdown" data-dropdown_name="components">
 						<div class="block w-100 direction-column">
@@ -60,7 +60,7 @@
 
 			<div class="block direction-row align-center px-5 py-3">
 				<a href="https://github.com/wimogas/barebones-framework" target="_blank">
-					<button class="button text small block direction-row align-center"><i class="ri-github-fill mr-2"></i>Github</button>
+					<button class="button white small block direction-row align-center"><i class="ri-github-fill mr-2"></i>Github</button>
 				</a>
 			</div>
 		</div>

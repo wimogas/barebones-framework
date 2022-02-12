@@ -1,8 +1,12 @@
+@use '../variables/colors' as *;
+@use '../variables/border-radius' as *;
+@use "../mixins/typography" as *;
+
 .tag {
     display: block;
-    font-size: 12px;
+    @include generate-type("medium");
     padding: 1rem 2rem;
-    border-radius: 3rem;
+    border-radius: $border-radius-4;
     @each $key, $val in ($color-theme) {
 		&.#{$key} {
 			background-color: $val;

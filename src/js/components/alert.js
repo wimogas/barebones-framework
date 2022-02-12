@@ -20,9 +20,7 @@ alerts.forEach((alert, i) => {
     if (alert.classList.contains("dismissable")) {
         const closeAlert = `
         <a class="alert-close" href="#">
-            <i class="icon medium filter-white ml-5">
-                <img src="./assets/icons/close.svg" />
-            </i>
+            <i class="icon ${alert.classList.contains("white") ? "primary" : "white"} ri-close-line"></i>
         </a>
         `
         const closeDiv = document.createElement('div')

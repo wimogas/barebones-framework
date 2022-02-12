@@ -94,6 +94,15 @@
                     </div>
                 </div>
 
+                <div class="block direction-column justify-start mt-5">
+                    <p class="color-text mb-3">.dismissable .white</p>
+                    <div class="alert white dismissable is-example mb-5" data-alert_name="example">
+                        <div class="block">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <p class="h5 mt-15">Example</p>

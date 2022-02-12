@@ -20,12 +20,11 @@ toasts.forEach((toast, i) => {
     if (toast.classList.contains("dismissable")) {
         const closeToast = `
         <a class="toast-close" href="#">
-            <i class="icon medium filter-white ml-5">
-                <img src="./assets/icons/close.svg" />
-            </i>
+            <i class="icon ${toast.classList.contains("white") ? "primary" : "white"} ml-4 ri-close-line"></i>
         </a>
         `
         const closeDiv = document.createElement('div')
+        closeDiv.className = 'toast-close-container'
         closeDiv.innerHTML = closeToast
         toasts[i].appendChild(closeDiv)
         closeToasts.push(toast)

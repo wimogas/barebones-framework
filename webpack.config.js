@@ -8,7 +8,7 @@ module.exports = {
   entry: './src/js/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[contenthash].js',
+    filename: 'barebones.js',
   },
   resolve: {
     extensions: ['.js']
@@ -52,7 +52,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[contenthash].css'
+      filename: 'barebones.css'
     }),
     new CleanWebpackPlugin(),
   ],

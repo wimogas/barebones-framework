@@ -25,7 +25,7 @@
                     </div>
                     <div class="block mt-5">
                         <span class="code">
-                            &ltdiv class="modal primary" data-modal_name="example"&gt;<br>
+                            &ltdiv class="modal" data-modal_name="example"&gt;<br>
                             &nbsp&ltdiv class="block"&gt;<br>
                             &nbsp&nbspLorem ipsum dolor sit amet, consectetur adipiscing<br>
                             &nbsp&lt/div&gt;<br>

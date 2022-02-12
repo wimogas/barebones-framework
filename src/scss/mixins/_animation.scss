@@ -1,0 +1,38 @@
+@use '../variables/spacing' as *;
+
+$dropdown-direction-map: (
+	"down": "top",
+	"up": "bottom",
+	"left": "right",
+	"right": "left",
+);
+
+@mixin dropdown-animate($direction) {
+	&.animate-menu-in {
+		animation: animate-menu-in-#{$direction} 0.3s ease forwards;
+	}
+	&.animate-menu-out {
+		animation: animate-menu-out-#{$direction} 0.3s ease forwards;
+	}
+	@keyframes animate-menu-in-#{$direction} {
+		from {
+			opacity: 0;
+			margin-#{map-get($dropdown-direction-map, $direction)}: 0;
+		}
+		to {
+			opacity: 1;
+			margin-#{map-get($dropdown-direction-map, $direction)}: $spacing200;
+		}
+	}
+	
+	@keyframes animate-menu-out-#{$direction} {
+		from {
+			opacity: 1;
+			margin-#{map-get($dropdown-direction-map, $direction)}: $spacing200;
+		}
+		to {
+			opacity: 0;
+			margin-#{map-get($dropdown-direction-map, $direction)}: 0;
+		}
+	}
+}

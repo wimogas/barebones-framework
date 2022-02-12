@@ -1,3 +1,5 @@
+@use '../variables/colors' as *;
+
 .alert {
     position: fixed;
     top: -60px;
@@ -43,4 +45,9 @@
     width: 50%;
     display: flex;
     justify-content: flex-end;
+}
+
+.alert-close {
+    display: flex;
+    align-items: center;
 }

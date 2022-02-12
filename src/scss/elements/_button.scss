@@ -1,3 +1,6 @@
+@use '../variables/colors' as *;
+@use '../variables/border-radius' as *;
+
 @mixin apply_background($color) {
 	background-color: $color;
 	transition: background-color 0.3s ease-in-out;
@@ -11,7 +14,7 @@
 	display: flex;
 	font-size: 16px;
 	padding: 3rem 6rem;
-	border-radius: 6px;
+	border-radius: $border-radius-2;
 	border: none;
 	cursor: pointer;
 	@each $key, $val in ($color-theme) {
@@ -27,12 +30,12 @@
 	&.small {
 		font-size: 14px;
 		padding: 1.5rem 3rem;
-		border-radius: 3px;
+		border-radius: $border-radius-1;
 	}
 	&.large {
 		font-size: 24px;
 		padding: 3rem 7rem;
-		border-radius: 8px;
+		border-radius: $border-radius-3;
 	}
 	&.full {
 		justify-content: center;

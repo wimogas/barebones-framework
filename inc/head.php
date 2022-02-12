@@ -10,10 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Barebones Framework</title>
 	<script defer src="./<?php echo($urlBundleJS)?>"></script>
-	<script
-	src="https://code.jquery.com/jquery-3.6.0.min.js"
-	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-	crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./<?php echo($urlBundleCSS)?>" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>

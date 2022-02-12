@@ -18,9 +18,7 @@
                     <div>
                         <button class="button dropdown-trigger primary" data-dropdown_trigger="btn">
                             <span>Button</span>
-                            <i class="icon medium filter-white ml-1">
-                                <img src="./assets/icons/arrow.svg" />
-                            </i>
+                            <i class="ri-arrow-down-s-line"></i>
                         </button>
                         <div class="dropdown" data-dropdown_name="btn">
                             <div class="block p-3">
@@ -49,9 +47,7 @@
                 <div class="mt-5">
                     <a href="#" class="link dropdown-trigger primary" data-dropdown_trigger="link">
                         <span>Link</span>
-                        <i class="icon medium filter-primary">
-                            <img src="./assets/icons/arrow.svg" />
-                        </i>
+                        <i class="ri-arrow-down-s-line"></i>
                     </a>
                     <div class="dropdown" data-dropdown_name="link">
                         <div class="block p-3">

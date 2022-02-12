@@ -1,3 +1,5 @@
+@use '../variables/border-radius' as *;
+
 .modal {
 	position: fixed;
 	top: 50%;
@@ -8,12 +10,11 @@
 	z-index: 1200;
 	opacity: 1;
 	min-height: 300px;
-	border-radius: 3rem;
+	border-radius: $border-radius-4;
 	padding: 5rem;
 	&.is-example {
 		min-height: 300px;
 		min-width: 300px;
-		border-radius: 3rem;
 		padding: 5rem;
 		position: unset;
 		top: unset;

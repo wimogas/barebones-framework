@@ -1,5 +1,8 @@
+@use '../variables/colors' as *;
+
 .link {
-    text-decoration: none;
+    display: flex;
+	align-items: center;
     @each $key, $val in ($color-theme) {
 		&.#{$key} {
 			color: $val;
